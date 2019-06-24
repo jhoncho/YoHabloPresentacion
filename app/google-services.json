@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "851576188771",
+    "firebase_url": "https://yohablo-f36dc.firebaseio.com",
+    "project_id": "yohablo-f36dc",
+    "storage_bucket": "yohablo-f36dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:851576188771:android:0da493d6c69f10ea",
+        "android_client_info": {
+          "package_name": "com.bayoex.yohablo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "851576188771-pj9p7pfgc4eh1g9p0gsvcmd2qoha5q3p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bayoex.yohablo",
+            "certificate_hash": "f19586d25da3fe0ff5a8958e65c536fa9093c577"
+          }
+        },
+        {
+          "client_id": "851576188771-9deimi7j0mfb6v6hu3c2u751rhd1e1ok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdewxOdwoFO5IudFfXOwrq1uNSW-iAPM4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "851576188771-9deimi7j0mfb6v6hu3c2u751rhd1e1ok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
