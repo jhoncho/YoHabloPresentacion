@@ -18,7 +18,7 @@ import com.rengwuxian.materialedittext.MaterialEditText;
 
 public class LoginActivity extends AppCompatActivity {
 
-    MaterialEditText email, password;
+    MaterialEditText username, password;
     Button btn_login;
 
     FirebaseAuth auth;
@@ -35,14 +35,14 @@ public class LoginActivity extends AppCompatActivity {
 
         auth = FirebaseAuth.getInstance();
 
-        email=findViewById(R.id.email);
+        username=findViewById(R.id.username);
         password=findViewById(R.id.password);
         btn_login=findViewById(R.id.btn_login);
 
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String txt_email=email.getText().toString();
+                String txt_email=username.getText().toString();
                 String txt_password=password.getText().toString();
                 
                 if (TextUtils.isEmpty(txt_email)|| TextUtils.isEmpty(txt_password))
