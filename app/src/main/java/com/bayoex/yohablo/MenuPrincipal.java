@@ -23,5 +23,10 @@ public class MenuPrincipal extends AppCompatActivity {
     {
         Intent texto_voz = new Intent(this, textoVoz.class);
         startActivity(texto_voz);
+    }//para cambiar al convertidor de voz a texto
+    public void voz_texto(View view)
+    {
+        Intent voz_texto = new Intent(this, VozTexto.class);
+        startActivity(voz_texto);
     }
 }
