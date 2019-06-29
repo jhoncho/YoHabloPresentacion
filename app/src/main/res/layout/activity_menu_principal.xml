@@ -1,9 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MenuPrincipal">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/logo_textovoz"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/textoavoz" />
+
+    <ImageView
+        android:id="@+id/voz_texto"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignTop="@+id/logo_textovoz"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:src="@drawable/vozatext" />
+
+    <Button
+        android:id="@+id/boton_textovoz"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="178dp"
+        android:background="@drawable/botontextoavoz" />
+
+    <Button
+        android:id="@+id/boton_voztexto"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:background="@drawable/botonvoztexto1" />
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignStart="@+id/boton_textovoz"
+        android:layout_alignLeft="@+id/boton_textovoz"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginBottom="291dp"
+        android:src="@drawable/aprendesenaslogo" />
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/logo_textovoz"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginBottom="-261dp"
+        android:background="@drawable/aprendesenas" />
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignStart="@+id/boton_voztexto"
+        android:layout_alignLeft="@+id/boton_voztexto"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="242dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:src="@drawable/textoasenaslogo" />
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/voz_texto"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginBottom="226dp"
+        android:layout_alignLeft="@+id/voz_texto"
+        android:background="@drawable/botontextoasenas"/>
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="86dp"
+        android:src="@drawable/chat" />
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/hablamos"/>
+</RelativeLayout>
