@@ -41,7 +41,8 @@
         android:layout_marginStart="44dp"
         android:layout_marginLeft="44dp"
         android:layout_marginTop="178dp"
-        android:background="@drawable/botontextoavoz" />
+        android:background="@drawable/botontextoavoz"
+        android:onClick="texto_voz" />
 
     <Button
         android:id="@+id/boton_voztexto"
