@@ -29,4 +29,10 @@ public class MenuPrincipal extends AppCompatActivity {
         Intent voz_texto = new Intent(this, VozTexto.class);
         startActivity(voz_texto);
     }
+    //para cambiar al aprende el abecedario
+    public void aprende_senas(View view)
+    {
+        Intent aprende_senas = new Intent(this, Aprende_Senas.class);
+        startActivity(aprende_senas);
+    }
 }
