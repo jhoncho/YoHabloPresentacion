@@ -35,4 +35,10 @@ public class MenuPrincipal extends AppCompatActivity {
         Intent aprende_senas = new Intent(this, Aprende_Senas.class);
         startActivity(aprende_senas);
     }
+    //para cambiar al aprende el palabras
+    public void texto_a_senas(View view)
+    {
+        Intent textoasenas = new Intent(this, texto_a_senas.class);
+        startActivity(textoasenas);
+    }
 }
