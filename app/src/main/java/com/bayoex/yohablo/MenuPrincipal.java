@@ -15,7 +15,7 @@ public class MenuPrincipal extends AppCompatActivity {
     //para cambiar al chat
     public void hablar(View view)
     {
-        Intent hablar = new Intent(this, LoginActivity.class);
+        Intent hablar = new Intent(this, StartActivity.class);
         startActivity(hablar);
     }
     //para cambiar al convertidor de texto a voz
