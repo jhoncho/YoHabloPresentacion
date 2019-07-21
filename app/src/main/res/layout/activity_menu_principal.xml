@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,10 +15,12 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="40dp"
-        android:src="@drawable/textoavoz" />
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:src="@drawable/textoavoz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/voz_texto"
@@ -26,10 +29,15 @@
         android:layout_alignTop="@+id/logo_textovoz"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginRight="55dp"
-        android:src="@drawable/vozatext" />
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/vozatext"
+        app:layout_constraintEnd_toStartOf="@+id/logo_textovoz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/boton_textovoz"
@@ -38,11 +46,12 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="44dp"
-        android:layout_marginLeft="44dp"
-        android:layout_marginTop="178dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/botontextoavoz"
-        android:onClick="texto_voz" />
+        android:onClick="texto_voz"
+        app:layout_constraintEnd_toEndOf="@+id/logo_textovoz"
+        app:layout_constraintStart_toStartOf="@+id/logo_textovoz"
+        app:layout_constraintTop_toBottomOf="@+id/logo_textovoz" />
 
     <Button
         android:id="@+id/boton_voztexto"
@@ -51,36 +60,49 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="180dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginRight="55dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/botonvoztexto1"
-        android:onClick="voz_texto" />
+        android:onClick="voz_texto"
+        app:layout_constraintEnd_toEndOf="@+id/voz_texto"
+        app:layout_constraintStart_toStartOf="@+id/voz_texto"
+        app:layout_constraintTop_toBottomOf="@+id/voz_texto" />
 
     <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="125dp"
         android:layout_height="125dp"
         android:layout_alignStart="@+id/boton_textovoz"
         android:layout_alignLeft="@+id/boton_textovoz"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="-2dp"
-        android:layout_marginLeft="-2dp"
-        android:layout_marginBottom="291dp"
-        android:src="@drawable/aprendesenaslogo" />
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:layout_marginBottom="14dp"
+        android:src="@drawable/aprendesenaslogo"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton_voztexto" />
 
     <Button
+        android:id="@+id/button"
         android:layout_width="125dp"
         android:layout_height="50dp"
         android:layout_alignBottom="@+id/logo_textovoz"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginStart="41dp"
-        android:layout_marginLeft="41dp"
-        android:layout_marginBottom="-261dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/aprendesenas"
-        android:onClick="aprende_senas" />
+        android:onClick="aprende_senas"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="125dp"
         android:layout_height="125dp"
         android:layout_alignStart="@+id/boton_voztexto"
@@ -88,12 +110,17 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="242dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginRight="55dp"
-        android:src="@drawable/textoasenaslogo" />
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/textoasenaslogo"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton_textovoz" />
 
     <Button
+        android:id="@+id/button2"
         android:layout_width="125dp"
         android:layout_height="50dp"
         android:layout_alignStart="@+id/voz_texto"
@@ -101,26 +128,40 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="55dp"
-        android:layout_marginRight="55dp"
-        android:layout_marginBottom="226dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
         android:background="@drawable/botontextoasenas"
-        android:onClick="texto_a_senas" />
+        android:onClick="texto_a_senas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <ImageView
+        android:id="@+id/imageView3"
         android:layout_width="125dp"
         android:layout_height="125dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="86dp"
-        android:src="@drawable/chat" />
+        android:layout_marginTop="24dp"
+        android:src="@drawable/chat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
         android:layout_width="125dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/hablamos"
-        android:onClick="hablar" />
-</RelativeLayout>
+        android:onClick="hablar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+</android.support.constraint.ConstraintLayout>
