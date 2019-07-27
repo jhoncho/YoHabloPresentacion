@@ -1,9 +1,10 @@
 package com.bayoex.yohablo;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MenuPrincipal extends AppCompatActivity {
 
@@ -40,5 +41,10 @@ public class MenuPrincipal extends AppCompatActivity {
     {
         Intent textoasenas = new Intent(this, texto_a_senas.class);
         startActivity(textoasenas);
+    }
+    public void vermapa(View view)
+    {
+        Intent vermapa = new Intent(this, Mapa.class);
+        startActivity(vermapa);
     }
 }

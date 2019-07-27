@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Yo Hablo</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="access_token" translatable="false">pk.eyJ1IjoiamhvbmRvdWdsYXMiLCJhIjoiY2p4b3c0NGgzMGJnejNtb2FjdnloY3ByMyJ9.luqD4mchgwm2ucDEPkT1bw</string>
+    <string name="user_location_permission_explanation">This app needs location permissions to show its functionality.</string>
+    <string name="user_location_permission_not_granted">You didn\'t grant location permissions.</string>
 </resources>

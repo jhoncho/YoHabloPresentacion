@@ -3,17 +3,19 @@
     package="com.bayoex.yohablo">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@drawable/yohablo"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@drawable/yohablo"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:hardwareAccelerated="false"
-        android:largeHeap="true">
-        <activity android:name=".texto_a_senas"></activity>
+        android:theme="@style/AppTheme">
+        <activity android:name=".Mapa"></activity>
+        <activity android:name=".texto_a_senas" />
         <activity android:name=".Aprende_Senas" />
         <activity android:name=".VozTexto" />
         <activity android:name=".textoVoz" />
